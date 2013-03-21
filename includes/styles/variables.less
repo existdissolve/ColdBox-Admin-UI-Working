@@ -1,0 +1,105 @@
+//
+// Glabal Variables
+// --------------------------------------------------
+
+// Grays
+@grayDarker:			#222;
+@grayDark:              #333;
+@gray:                  #555;
+@grayLight:             #999;
+@grayLighter:           #DDD;
+@grayLightest:          #EEE;
+
+// Brand colors
+@accent-color: 			#46B3B9;
+@body-background: 		#EE8923;
+@body-background-dark: 	#BE4F45;
+@navbar-background: 	#3B4043;
+
+@brand-primary:         @accent-color;
+@brand-success:         #85B200;
+@brand-warning:         #b94a48;
+@brand-danger:          #d9534f;
+@brand-info:            #5bc0de;
+
+// Scaffolding
+@text-color:            @gray;
+@label-color: 			#484848;
+@panel-space:			16px;
+
+// Links
+@link-color:            darken(@accent-color, 5%);
+@link-color-hover:      darken(@link-color, 15%);
+
+// Typography
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic|Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
+
+@font-family-sans-serif:  "Open Sans", Helvetica, Arial, sans-serif;
+@font-family-serif:       Georgia, "Times New Roman", Times, serif;
+@font-family-monospace:   Monaco, Menlo, Consolas, "Courier New", monospace;
+@font-family-base:        @font-family-sans-serif;
+
+@font-size-base:          13;
+@font-size-large:         (@font-size-base * 1.25); // ~18px
+@font-size-small:         (@font-size-base * 0.85); // ~12px
+@font-size-mini:          (@font-size-base * 0.75); // ~11px
+
+@line-height-base:        20px;
+
+@headings-font-family:    inherit; // empty to use BS default, @font-family-base
+@headings-font-weight:    600;
+
+// Component sizing
+@border-radius-none:     0px;
+@border-radius-base:      4px;
+@border-radius-large:     6px;
+@border-radius-small:     3px;
+
+// Borders
+@border-thin:			solid 1px #DDD;
+
+// Forms
+@input-background:               #fff;
+@input-background-disabled:      @grayLighter;
+
+@input-border:                   #ccc;
+@input-border-radius:            @border-radius-none;
+
+@input-color-placeholder:        @grayLight;
+
+// Form states and alerts
+@state-warning-text:             #c09853;
+@state-warning-background:       #fcf8e3;
+@state-warning-border:           darken(spin(@state-warning-background, -10), 3%);
+
+@state-error-text:               #b94a48;
+@state-error-background:         lighten(@brand-warning,20%);
+@state-error-border:             darken(spin(@state-error-background, -10), 3%);
+
+@state-success-text:             #468847;
+@state-success-background:       #dff0d8;
+@state-success-border:           darken(spin(@state-success-background, -10), 5%);
+
+@state-info-text:                #3a87ad;
+@state-info-background:          #d9edf7;
+@state-info-border:              darken(spin(@state-info-background, -10), 7%);
+
+// Buttons
+@btn-color:                          #fff;
+@btn-background:                     #a7a9aa;
+@btn-border:                         @btn-background;
+
+@btn-background-primary:             @brand-primary;
+@btn-border-primary:                 @btn-background-primary;
+
+@btn-background-success:             @brand-success;
+@btn-border-success:                 @btn-background-success;
+
+@btn-background-warning:             @brand-warning;
+@btn-border-warning:                 @btn-background-warning;
+
+@btn-background-danger:              @brand-danger;
+@btn-border-danger:                  @btn-background-danger;
+
+@btn-background-info:                @brand-info;
+@btn-border-info:                    @btn-background-info;

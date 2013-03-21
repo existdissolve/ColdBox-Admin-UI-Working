@@ -1,0 +1,86 @@
+/* Core variables and mixins */
+@import "variables.less";
+@import "mixins.less";
+
+/* Bootstrap Overides */
+@import "bootstrap-overides.less";
+
+/* ContentBox Admin */
+@import "contentbox.less";
+
+/* ContentBox - Admin Layout */
+#main-content {
+	padding-left: 176px;
+	padding-right: 316px;
+}
+#side-content {
+	margin-bottom: @panel-space;
+	margin-right: @panel-space;
+	width: 300px;
+	position: absolute;
+	top: 40px;
+	right: 0;
+}
+
+#main-nav {
+	width: 160px;
+	position: absolute;
+	top: 40px;
+	left: 0;
+	background-color: #FFF;
+	.box-shadow(0 0 5px rgba(0,0,0,0.45));
+}
+
+#main-nav ul {
+	list-style: none;
+	margin: 0;
+}
+#main-nav > ul > li {
+	
+}
+#main-nav > ul > li > a {
+	display: block;
+	width: 160px;
+	border-bottom: @border-thin;
+	font-size: 18px;
+	line-height: 18px;
+	padding-top: 10px;
+	padding-bottom: 12px;
+	color: @gray;
+}
+#main-nav > ul > li > a > i {
+	margin-left: 9px;
+	margin-right: 12px;
+}
+#main-nav > ul > li > a:hover {
+	text-decoration: none;
+	color: @gray;
+	background-color: @grayLighter;
+}
+#main-nav > ul > li > a.active {
+	text-decoration: none;
+	color: #FFF;
+	background-color: @accent-color;
+	border-bottom: none;
+}
+#main-nav > ul > li > a.active > i {
+	color: @gray;
+}
+#main-nav > ul > li > ul {
+	background-color: @navbar-background;
+	padding: 16px;
+}
+#main-nav > ul > li > ul > li {
+	
+}
+#main-nav > ul > li > ul > li > a {
+	color: #FFF;
+}
+#main-nav > ul > li > ul > li > a:hover {
+	color: @accent-color;
+	text-decoration: none;
+}
+#main-nav > ul > li > ul > li > sup {
+	margin-left: 4px;
+	color: @brand-danger;
+}
